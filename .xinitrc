@@ -11,12 +11,10 @@ fi
 
 xsetroot -cursor_name left_ptr 	#cursor dursor
 xset dpms 180           	#screen goes to sleep 3min
-xautolock -detectsleep \
-          -time     7 \
-          -locker   "xtrlock -b" &
 
+xscreensaver -nosplash &
 xbindkeys &
-xmodmap ~/.Xmodmap      #keymapping - geared toward thinkpad keyboard
+xmodmap ~/.Xmodmap  &   #keymapping - geared toward thinkpad keyboard
 start-pulseaudio-x11 &
 sh ~/.fehbg &
 redshift -l 43.253015:-89.153016 & 
