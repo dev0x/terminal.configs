@@ -12,9 +12,9 @@ fi
 xsetroot -cursor_name left_ptr 	#cursor dursor
 xset dpms 180           	#screen goes to sleep 3min
 
-xscreensaver -nosplash &
+#xscreensaver -nosplash &  #  commented this out, as XMonad spawns xscreensaver now  
 xbindkeys &
-xmodmap ~/.Xmodmap  &   #keymapping - geared toward thinkpad keyboard
+xmodmap ~/.Xmodmap &   #keymapping - geared toward thinkpad keyboard
 start-pulseaudio-x11 &
 sh ~/.fehbg &
 redshift -l 43.253015:-89.153016 & 
