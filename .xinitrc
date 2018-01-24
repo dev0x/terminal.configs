@@ -18,9 +18,13 @@ xset dpms 180                   #screen goes to sleep 3min
 
 eval $(ssh-agent)
 
+#enable tapping on touchpad
+xinput set-prop 12 291 1
+
 xbindkeys &
 xmodmap ~/.Xmodmap &   #keymapping - geared toward thinkpad keyboard
 #sh ~/trackpoint-speed.sh &
+sh ~/.screenlayout/4k-primary.sh &
 sh ~/.fehbg &
 redshift -l 43.253015:-89.153016 & 
 #last is xmonad
